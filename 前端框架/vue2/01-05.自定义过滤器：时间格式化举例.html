@@ -2408,7 +2408,7 @@
 <p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x5168;&#x5C40;&#x65B9;&#x6CD5;<code>Vue.filter()</code>&#x81EA;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x8FC7;&#x6EE4;&#x5668;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x8BDD;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;Vue&#x7684;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#xFF08;&#x6BCF;&#x4E00;&#x4E2A;VM&#x5B9E;&#x4F8B;&#xFF09;&#x90FD;&#x53EF;&#x4EE5;&#x62FF;&#x5230;&#x8FD9;&#x4E2A;&#x8FC7;&#x6EE4;&#x5668;&#x3002;&#x5B83;&#x63A5;&#x6536;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;&#x8FC7;&#x6EE4;&#x5668;&#x7684;&#x540D;&#x79F0; &#x3001;&#x8FC7;&#x6EE4;&#x5668;&#x51FD;&#x6570;&#x3002;</p>
 <p>&#x6BD4;&#x5982;&#x8BF4;&#xFF0C;&#x6211;&#x8981;&#x5C06;<code>&#x66FE;&#x7ECF;&#xFF0C;&#x6211;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x5355;&#x7EAF;&#x7684;&#x5C11;&#x5E74;&#xFF0C;&#x5355;&#x7EAF;&#x7684;&#x6211;&#xFF0C;&#x50BB;&#x50BB;&#x7684;&#x95EE;&#xFF0C;&#x8C01;&#x662F;&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x5355;&#x7EAF;&#x7684;&#x7537;&#x4EBA;</code>&#x8FD9;&#x53E5; msg &#x4E2D;&#x7684;&#x201C;&#x5355;&#x7EAF;&#x201D;&#x6539;&#x4E3A;&#x201C;&#x90AA;&#x6076;&#x201D;&#x3002;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x505A;&#xFF1A;</p>
 <p>&#xFF08;1&#xFF09;&#x5728;&#x5DEE;&#x503C;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x8FD9;&#x6837;&#x8C03;&#x7528;&#xFF1A;</p>
-<pre><code class="lang-html">        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ msg | msgFormat }<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<pre><code class="lang-html">        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{ { msg | msgFormat } }<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 <p>&#x4E0A;&#x65B9;&#x4EE3;&#x7801;&#x7684;&#x610F;&#x601D;&#x662F;&#x8BF4;&#xFF1A;</p>
 <ul>
@@ -2449,7 +2449,7 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
         <span class="hljs-comment">&lt;!-- &#x901A;&#x8FC7; &#x8FC7;&#x6EE4;&#x5668; msgFormat &#x5BF9; msg &#x8FDB;&#x884C;&#x8FC7;&#x6EE4;--&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ msg | msgFormat }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{  { msg | msgFormat }  }<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
@@ -2466,7 +2466,7 @@
             data: {
                 msg: <span class="hljs-string">&apos;&#x66FE;&#x7ECF;&#xFF0C;&#x6211;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x5355;&#x7EAF;&#x7684;&#x5C11;&#x5E74;&#xFF0C;&#x5355;&#x7EAF;&#x7684;&#x6211;&#xFF0C;&#x50BB;&#x50BB;&#x7684;&#x95EE;&#xFF0C;&#x8C01;&#x662F;&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x5355;&#x7EAF;&#x7684;&#x7537;&#x4EBA;&apos;</span>
             },
-            methods: {}
+            methods: {  }
         });
     </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
@@ -2512,7 +2512,7 @@
             data: {
                 msg: <span class="hljs-string">&apos;&#x66FE;&#x7ECF;&#xFF0C;&#x6211;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x5355;&#x7EAF;&#x7684;&#x5C11;&#x5E74;&#xFF0C;&#x5355;&#x7EAF;&#x7684;&#x6211;&#xFF0C;&#x50BB;&#x50BB;&#x7684;&#x95EE;&#xFF0C;&#x8C01;&#x662F;&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x5355;&#x7EAF;&#x7684;&#x7537;&#x4EBA;&apos;</span>
             },
-            methods: {}
+            methods: {  }
         });
     </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
@@ -2537,7 +2537,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
         <span class="hljs-comment">&lt;!-- &#x901A;&#x8FC7; &#x8FC7;&#x6EE4;&#x5668; msgFormat &#x5BF9; msg &#x8FDB;&#x884C;&#x8FC7;&#x6EE4;--&gt;</span>
         <span class="hljs-comment">&lt;!-- &#x3010;&#x91CD;&#x8981;&#x3011;&#x62EC;&#x53F7;&#x91CC;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4EE3;&#x8868; function &#x4E2D;&#x7684; arg2&#xFF0C;&#x62EC;&#x53F7;&#x91CC;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4EE3;&#x8868; function &#x4E2D;&#x7684; arg3--&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ msg | msgFormat(&apos;&#x3010;&#x725B;x&#x3011;&apos;, &apos;&#x3010;&#x53C2;&#x6570;arg3&#x3011;&apos;) }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{  { msg | msgFormat(&apos;&#x3010;&#x725B;x&#x3011;&apos;, &apos;&#x3010;&#x53C2;&#x6570;arg3&#x3011;&apos;) }  }<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
@@ -2555,7 +2555,7 @@
             data: {
                 msg: <span class="hljs-string">&apos;&#x66FE;&#x7ECF;&#xFF0C;&#x6211;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x5355;&#x7EAF;&#x7684;&#x5C11;&#x5E74;&#xFF0C;&#x5355;&#x7EAF;&#x7684;&#x6211;&#xFF0C;&#x50BB;&#x50BB;&#x7684;&#x95EE;&#xFF0C;&#x8C01;&#x662F;&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x5355;&#x7EAF;&#x7684;&#x7537;&#x4EBA;&apos;</span>
             },
-            methods: {}
+            methods: { }
         });
     </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
@@ -2581,7 +2581,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
         <span class="hljs-comment">&lt;!-- &#x901A;&#x8FC7; &#x4E24;&#x4E2A;&#x8FC7;&#x6EE4;&#x5668;&#xFF08;msgFormat&#x3001;myFilter2&#xFF09;&#x5BF9; msg &#x8FDB;&#x884C;&#x8FC7;&#x6EE4;--&gt;</span>
         <span class="hljs-comment">&lt;!-- &#x5C06; msg &#x4EA4;&#x7ED9;&#x7B2C;&#x4E00;&#x4E2A;&#x8FC7;&#x6EE4;&#x5668;&#x6765;&#x5904;&#x7406;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x5904;&#x7406;&#x7684;&#x7ED3;&#x679C;&#x4EA4;&#x7ED9;&#x7B2C;&#x4E8C;&#x4E2A;&#x8FC7;&#x6EE4;&#x5668;&#x6765;&#x5904;&#x7406;--&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ msg | msgFormat(&apos;&#x3010;&#x725B;x&#x3011;&apos;, &apos;&#x3010;&#x53C2;&#x6570;arg3&#x3011;&apos;) | myFilter2}}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{  { msg | msgFormat(&apos;&#x3010;&#x725B;x&#x3011;&apos;, &apos;&#x3010;&#x53C2;&#x6570;arg3&#x3011;&apos;) | myFilter2}  }<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
@@ -2605,7 +2605,7 @@
             data: {
                 msg: <span class="hljs-string">&apos;&#x66FE;&#x7ECF;&#xFF0C;&#x6211;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x5355;&#x7EAF;&#x7684;&#x5C11;&#x5E74;&#xFF0C;&#x5355;&#x7EAF;&#x7684;&#x6211;&#xFF0C;&#x50BB;&#x50BB;&#x7684;&#x95EE;&#xFF0C;&#x8C01;&#x662F;&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x5355;&#x7EAF;&#x7684;&#x7537;&#x4EBA;&apos;</span>
             },
-            methods: {}
+            methods: {  }
         });
     </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
@@ -2627,12 +2627,12 @@
 
 <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
-        {{ time }}
-        <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span> {{ time | datefmt }}
+        {  { time }  }
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span> { { time | datefmt }  }
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app1&quot;</span>&gt;</span>
-        {{ time | datefmt }}
+        {  { time | datefmt }  }
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
@@ -2683,7 +2683,7 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
         2018-05-25T14:06:51.618Z
-        <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span> {{ &apos;2018-05-25T14:06:51.618Z&apos; | dateFormat }}
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span> {  { &apos;2018-05-25T14:06:51.618Z&apos; | dateFormat } }
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
@@ -2740,7 +2740,7 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
         2018-05-25T14:06:51.618Z
-        <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span> {{ &apos;2018-05-25T14:06:51.618Z&apos; | dateFormat }}
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span> {  { &apos;2018-05-25T14:06:51.618Z&apos; | dateFormat }  }
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
@@ -2795,7 +2795,7 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
         2018-05-25T14:06:51.618Z
-        <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span> {{ &apos;2018-05-25T14:06:51.618Z&apos; | dateFormat }}
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span> {  { &apos;2018-05-25T14:06:51.618Z&apos; | dateFormat }  }
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
@@ -2848,7 +2848,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span>
         {{ time }}
         <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
-        {{ time | datefmt }}
+        {  { time | datefmt }  }
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
@@ -2932,7 +2932,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"05.自定义过滤器：时间格式化举例","level":"3.1.6","depth":2,"next":{"title":"06.自定义按键修饰符&自定义指令","level":"3.1.7","depth":2,"path":"前端框架/vue2/01-06.自定义按键修饰符&自定义指令.md","ref":"前端框架/vue2/01-06.自定义按键修饰符&自定义指令.md","articles":[]},"previous":{"title":"04.Vue的举例：列表功能","level":"3.1.5","depth":2,"path":"前端框架/vue2/01-04.Vue的举例：列表功能.md","ref":"前端框架/vue2/01-04.Vue的举例：列表功能.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","expandable-chapters-small","splitter","-lunr","-search","search-pro","code","back-to-top-button","toggle-chapters"],"styles":{"website":"custom_style.css"},"pluginsConfig":{"github":{"url":"https://gitee.com/siyue_lu"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","author":"lusy","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"我的笔记","language":"zh-hans","gitbook":"*","description":"日常工作中用到的一些技术总结"},"file":{"path":"前端框架/vue2/01-05.自定义过滤器：时间格式化举例.md","mtime":"2021-05-11T15:11:51.071Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-11T20:44:49.574Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"05.自定义过滤器：时间格式化举例","level":"3.1.6","depth":2,"next":{"title":"06.自定义按键修饰符&自定义指令","level":"3.1.7","depth":2,"path":"前端框架/vue2/01-06.自定义按键修饰符&自定义指令.md","ref":"前端框架/vue2/01-06.自定义按键修饰符&自定义指令.md","articles":[]},"previous":{"title":"04.Vue的举例：列表功能","level":"3.1.5","depth":2,"path":"前端框架/vue2/01-04.Vue的举例：列表功能.md","ref":"前端框架/vue2/01-04.Vue的举例：列表功能.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","expandable-chapters-small","splitter","-lunr","-search","search-pro","code","back-to-top-button","toggle-chapters"],"styles":{"website":"custom_style.css"},"pluginsConfig":{"github":{"url":"https://gitee.com/siyue_lu"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","author":"lusy","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"我的笔记","language":"zh-hans","gitbook":"*","description":"日常工作中用到的一些技术总结"},"file":{"path":"前端框架/vue2/01-05.自定义过滤器：时间格式化举例.md","mtime":"2021-05-11T20:51:46.104Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-11T20:58:55.375Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

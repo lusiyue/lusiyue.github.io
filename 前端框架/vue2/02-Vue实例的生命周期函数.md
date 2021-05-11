@@ -116,7 +116,7 @@ PS：数据发生变化时，会触发这两个方法。不过，我们一般用
     <!--这个div区域就是MVVM中的 View-->
     <div id="app">
         <input type="button" value="修改flag" @click="myMethod">
-        <h3 id="h3">{{ flag }}</h3>
+        <h3 id="h3">{  { flag }  }</h3>
     </div>
 </body>
 

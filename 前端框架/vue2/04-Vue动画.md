@@ -386,7 +386,7 @@ animate.css网址：
             data: {
                 flag: false
             },
-            methods: {}
+            methods: { }
         });
     </script>
 </body>
@@ -1106,7 +1106,7 @@ Vue官方文档的解释是这样：
         <!-- 通过 为 transition-group 元素，设置 tag 属性，指定 transition-group 渲染为指定的元素，如果不指定 tag 属性，默认，渲染为 span 标签 -->
         <transition-group appear tag="ul">
             <li v-for="(item, i) in list" :key="item.id" @click="del(i)">
-                {{item.id}} --- {{item.name}}
+                {  {item.id}  } --- {  {item.name}  }
             </li>
         </transition-group>
         <!-- </ul> -->

@@ -31,7 +31,7 @@
     <!-- 定义子组件的模板 -->
     <template id="myTemplate">
         <!-- 第二步：在子组件的模板中，使用props中的属性 -->
-        <h2 @click="change">我是子组件。我想使用父组件中的数据parentMsg： {{ parentMsg }}</h2>
+        <h2 @click="change">我是子组件。我想使用父组件中的数据parentMsg： {  { parentMsg }  }</h2>
     </template>
 
     <script>

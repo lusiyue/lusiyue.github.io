@@ -96,9 +96,9 @@ vue-resource 依赖于 Vue。所以，我们要按照先后顺序，导入vue.js
                 <th>操作</th>
             </tr>
             <tr v-for="item in list">
-                <td>{{item.id}}</td>
-                <td>{{item.name}}</td>
-                <td>{{item.ctime}}</td>
+                <td>{  {item.id} }</td>
+                <td>{  {item.name} }</td>
+                <td>{ {item.ctime} }</td>
                 <td>
                 <a href="javascript:void(0)">删除</a>
                 </td>
@@ -232,9 +232,9 @@ vue-resource 依赖于 Vue。所以，我们要按照先后顺序，导入vue.js
                 <th>操作</th>
             </tr>
             <tr v-for="item in list">
-                <td>{{item.id}}</td>
-                <td>{{item.name}}</td>
-                <td>{{item.ctime}}</td>
+                <td>{  {item.id}  }</td>
+                <td>{  {item.name}  }</td>
+                <td>{  {item.ctime}  }</td>
                 <td>
                     <a href="javascript:void(0)">删除</a>
                 </td>
@@ -352,9 +352,9 @@ vue-resource 依赖于 Vue。所以，我们要按照先后顺序，导入vue.js
                 <th>操作</th>
             </tr>
             <tr v-for="item in list">
-                <td>{{item.id}}</td>
-                <td>{{item.name}}</td>
-                <td>{{item.ctime}}</td>
+                <td>{  {item.id}  }</td>
+                <td>{  {item.name}  }</td>
+                <td>{  {item.ctime}  }</td>
                 <td>
                     <!-- 具体要删除哪个item，不能写死。所以要根据id来删 -->
                     <a href="javascript:void(0)" @click="deldata(item.id)">删除</a>
